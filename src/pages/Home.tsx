@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Button } from '../components/ui/button'
-import { ShieldCheck, Star, Zap, Users } from 'lucide-react'
+import { ShieldCheck, Star, Users } from 'lucide-react'
 
 const HERO_IMAGE_URL = 'https://gudiuktjzynkjvtqmuvi.supabase.co/storage/v1/object/public/hero-images/2516aa74-5b63-432b-93d5-0e880504cbc3-hero.png'
 
