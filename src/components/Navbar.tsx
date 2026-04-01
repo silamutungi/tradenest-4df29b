@@ -28,6 +28,7 @@ export default function Navbar() {
         <Link to="/" className="font-bold text-xl text-foreground tracking-tight focus:outline-none focus:ring-2 focus:ring-ring rounded">TradeNest</Link>
         <div className="hidden md:flex items-center gap-6">
           <Link to="/browse" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded">Browse</Link>
+          <Link to="/contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded">Contact</Link>
           {user ? (
             <>
               <Link to="/sell" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded">Sell</Link>
@@ -55,6 +56,7 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-background border-b border-border px-6 pb-6 flex flex-col gap-4">
           <Link to="/browse" className="text-sm font-medium text-foreground py-2 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>Browse</Link>
+          <Link to="/contact" className="text-sm font-medium text-foreground py-2 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>Contact</Link>
           {user ? (
             <>
               <Link to="/sell" className="text-sm font-medium text-foreground py-2 min-h-[44px] flex items-center" onClick={() => setOpen(false)}>Sell</Link>

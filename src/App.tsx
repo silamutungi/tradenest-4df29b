@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import Browse from './pages/Browse'
 import ListingDetail from './pages/ListingDetail'
 import CreateListing from './pages/CreateListing'
+import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/browse" element={<Browse />} />
       <Route path="/listings/:id" element={<ListingDetail />} />
+      <Route path="/contact" element={<Contact />} />
       <Route
         path="/dashboard"
         element={
